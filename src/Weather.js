@@ -82,7 +82,7 @@ function Weather() {
           </div>
         </div>
       </div>
-      <p className="link">
+      <p className="link mp-3">
         <a href="https://github.com/lizakholkina/weather-react" target="_blank">
           <img src="github.png" alt="github" className="github-img" />
         </a>
