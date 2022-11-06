@@ -82,6 +82,12 @@ function Weather() {
           </div>
         </div>
       </div>
+      <p className="link">
+        <a href="https://github.com/lizakholkina/weather-react" target="_blank">
+          <img src="img/github.png" alt="github" className="github-img" />
+        </a>
+        GitHub repositoty by Kholkina Yelizaveta
+      </p>
     </div>
   );
 }
