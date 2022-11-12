@@ -9,7 +9,7 @@ function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       date: new Date(response.data.dt * 1000),
-      icon: "01d.png",
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       city: response.data.name,
