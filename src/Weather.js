@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 function Weather() {
@@ -7,7 +8,7 @@ function Weather() {
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
-      date: "Saturday, November 5, 2022, 18:48",
+      date: new Date(response.data.dt * 1000),
       icon: "01d.png",
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -53,7 +54,9 @@ function Weather() {
         </div>
         <div className="currently-city">
           <h2>{weatherData.city}</h2>
-          <h3>{weatherData.date}</h3>
+          <h3>
+            <FormattedDate date={weatherData.date} />
+          </h3>
           <button className="current-location-button">Current Location</button>
         </div>
         <div className="currently-weather">
