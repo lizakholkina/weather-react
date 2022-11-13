@@ -159,3 +159,9 @@ a:hover {
 .col-1 {
   text-align: center;
 }
+
+.units {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

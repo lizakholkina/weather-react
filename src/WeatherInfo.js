@@ -40,10 +40,8 @@ export default function WeatherInfo(props) {
           <div className="col">
             <div className="degree">
               <WeatherUnits celsius={props.data.temperature} />
-
               <h2 id="description" className="text-capitalize">
-                {" "}
-                {props.data.description}{" "}
+                {props.data.description}
               </h2>
             </div>
           </div>
