@@ -146,7 +146,7 @@ a:hover {
   margin-top: 40px;
 }
 .link {
-  margin-top: 20px;
+  margin-top: 10px;
   color: white;
   font-size: 15px;
 }
@@ -164,4 +164,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.degree h2 {
+  font-size: 30px;
 }
