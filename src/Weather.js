@@ -10,6 +10,7 @@ function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       date: new Date(response.data.dt * 1000),
+      cordinates: response.data.cord,
       icon: response.data.weather[0].icon,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -75,7 +76,7 @@ function Weather(props) {
           </div>
         </div>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weatherData.coordinates} />
 
         <p className="link">
           <a
