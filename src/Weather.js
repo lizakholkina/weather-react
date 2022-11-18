@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 
 function Weather(props) {
@@ -74,6 +75,7 @@ function Weather(props) {
           </div>
         </div>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast />
 
         <p className="link">
           <a
