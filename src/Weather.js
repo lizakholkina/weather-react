@@ -81,6 +81,7 @@ function Weather(props) {
         <p className="link">
           <a
             href="https://github.com/lizakholkina/weather-react"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <img src="github.png" alt="github" className="github-img" />
