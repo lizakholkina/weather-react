@@ -24,18 +24,6 @@ export default function WeatherInfo(props) {
             <div className="col-12">
               <p id="wind">Wind {props.data.wind} km/h</p>
             </div>
-            <div className="row">
-              <div className="col">
-                <p id="sunrise">
-                  Sunrise <br /> 05:33
-                </p>
-              </div>
-              <div className="col">
-                <p id="sunset">
-                  Sunset <br /> 19:10
-                </p>
-              </div>
-            </div>
           </div>
           <div className="col">
             <div className="degree">
